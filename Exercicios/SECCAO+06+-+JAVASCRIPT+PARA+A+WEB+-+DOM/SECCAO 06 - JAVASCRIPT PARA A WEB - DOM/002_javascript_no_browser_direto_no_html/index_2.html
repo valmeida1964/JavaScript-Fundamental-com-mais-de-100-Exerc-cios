@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- JavaScript no head -->
+    <script>
+        console.log('JavaScript no head')
+    </script>
+</head>
+<body>
+    
+    <!-- JavaScript no meio do body. Isto não é recomendado -->
+    <script>
+        console.log('JavaScript no meio do body')
+    </script>
+
+    <!-- JavaScript no body -->
+    <script>
+        console.log('JavaScript no final do body')
+    </script>
+
+</body>
+</html>
+
+<!-- 
+    Existe alguma diferença entre JavaScript no head e no body:
+    1. O JavaScript no head será executado antes do body ser carregado
+    2. O JavaScript no (final) body será executado depois do body ser carregado
+    3. Podemos usar alguns eventos para executar o JavaScript no head após o body ser carregado
+ -->

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-slate-100">
+
+    <div class="flex items-center justify-center">
+
+        <div class="p-6 bg-slate-100 text-slate-500 border-1 border-slate-400 rounded-lg shadow-md w-2/3 m-10">
+
+            <p class="text-2xl text-slate-400">Países do Mundo</p>
+
+            <hr class="border-slate-400 my-4">
+            
+            <select id="selectCountry" class="w-100 p-2 border-1 border-slate-400 rounded-lg bg-white text-slate-500">
+                <option value="" disabled selected>Selecione um país</option>
+                <!-- As opções serão preenchidas dinamicamente pelo JavaScript -->
+            </select>
+            
+            <hr class="border-slate-400 my-4">
+
+            <div class="border-1 border-slate-400 rounded-lg p-6 hidden" id="countryInformation">
+
+                <div class="flex">
+                    <img id="countryFlag" src="" alt="Bandeira do País" class="w-1/3 h-auto rounded-lg mr-4">
+                    <div class="w-2/3">
+                        <p id="countryName" class="text-xl font-bold text-slate-700">[nome do país]</p>
+                        <hr class="border-slate-400 my-2">
+                        <p id="countryCapital" class="text-slate-600">[capital]</p>
+                        <p id="countryRegion" class="text-slate-600">[continente]</p>
+                        <p id="countryArea" class="text-slate-600">[área]</p>
+                        <p id="countryPopulation" class="text-slate-600">[população]</p>
+                        <p id="countryLanguages" class="text-slate-600">[idiomas]</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>

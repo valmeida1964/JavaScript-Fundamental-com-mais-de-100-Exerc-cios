@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-slate-100">
+
+    <div class="flex items-center justify-center m-10">
+
+        <div class="p-6 bg-slate-100 text-slate-500 border-1 border-slate-400 rounded-lg shadow-md w-full">
+
+            <p class="text-2xl text-slate-400">Lista de tarefas</p>
+
+            <hr class="border-slate-400 my-3">
+            
+            <div class="flex items-center mb-3" id="nova_tarefa">
+                <label for="input_nova_tarefa" class="text-slate-600 font-bold me-3">Nova tarefa</label>
+                <input type="text" id="input_nova_tarefa" class="border-1 border-slate-400 rounded-lg p-2 w-1/2 me-3" placeholder="Digite uma nova tarefa">
+                <button id="btn_adicionar" class="bg-slate-500 text-white rounded-lg p-2 px-6 hover:bg-slate-400 cursor-pointer">Adicionar tarefa</button>
+            </div>
+
+            <div class="flex items-center mb-3 hidden" id="editar_tarefa">
+                <label for="input_editar_tarefa" class="text-slate-600 font-bold me-3">Editar tarefa</label>
+                <input type="text" id="input_editar_tarefa" class="border-1 border-slate-400 rounded-lg p-2 w-1/2 me-3" placeholder="Digite uma nova tarefa">
+                <button id="btn_cancelar" class="bg-slate-500 text-white rounded-lg p-2 px-6 hover:bg-slate-400 cursor-pointer me-3">Cancelar</button>
+                <button id="btn_editar" class="bg-slate-500 text-white rounded-lg p-2 px-6 hover:bg-slate-400 cursor-pointer">Editar tarefa</button>
+            </div>
+            
+            <hr class="border-slate-400 mb-3">
+
+            <p class="text-xl text-slate-400 mb-6">Tarefas disponíveis:</p>
+
+            <div id="lista_tarefas"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>

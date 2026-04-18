@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="content"></h1>
+    <button id="button">Click me</button>
+
+    <script>
+
+        // https://restcountries.com
+
+        const url = "https://restcountries.com/v3.1/name/brasil";
+        const button = document.querySelector("#button");
+        const content = document.querySelector("#content");
+
+        button.addEventListener('click', () => {
+            fetchData(url)
+                .then(response => {
+                    const result = JSON.parse(response);
+                    content.innerHTML = "Capital: " + result[0].capital;
+                })
+                .catch(error => {
+                    content.innerHTML = error;
+                });
+        });
+
+        function fetchData(url){
+
+            return new Promise((resolve, reject) => {
+                const xhr = new XMLHttpRequest();
+                xhr.open('GET', url);
+                xhr.onreadystatechange = function(){
+                    if(xhr.readyState === 4){
+                        if(xhr.status === 200){
+                            console.log(xhr.responseText);
+                            resolve(xhr.responseText);
+                        } else {
+                            reject('Aconteceu um erro!');
+                        }
+                    }
+                }
+                xhr.send();
+            });
+
+        }
+
+    </script>
+
+</body>
+</html>

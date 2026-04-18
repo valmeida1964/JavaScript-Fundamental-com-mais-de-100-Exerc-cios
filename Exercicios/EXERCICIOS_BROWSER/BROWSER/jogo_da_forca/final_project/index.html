@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-slate-100">
+
+    <div class="flex items-center justify-center h-screen">
+
+        <div class="p-6 bg-slate-100 text-slate-500 border-1 border-slate-400 rounded-lg shadow-md w-300">
+
+            <p class="text-slate-400 text-center text-3xl">Jogo da Forca</p>
+            
+            <hr class="border-slate-400 my-4">
+
+            <div class="flex justify-center mb-4">
+                <img src="assets/1.jpg" id="forca_image" class="w-[300px] h-[300px]">
+            </div>
+
+            <p class="font-mono text-6xl text-center mb-4" id="palavra_secreta">&nbsp;</p>
+
+            <div class="grid grid-cols-13 mb-4" id="letras_escolhidas"></div>
+
+            <div class="flex justify-center">
+                <button id="btn_reiniciar" class="bg-slate-500 text-white px-4 py-2 rounded hover:bg-slate-600">Reiniciar jogo</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js" type="module"></script>
+
+</body>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-700">
+    
+    <div class="flex justify-center mt-10">
+        
+        <div class="p-6 bg-slate-200 text-slate-500 border-1 border-slate-400 rounded-lg shadow-md w-1/2">
+            
+            <div class="flex justify-between items-center">
+
+                <div class="bg-green-200 text-slate-900 p-2 px-4 border-3 border-green-900 rounded-lg flex items-center" id="player_1">
+                    <span class="text-2xl font-bold me-3">Jogador 1:</span>
+                    <span class="text-4xl font-bold text-yellow-600" id="score_player1">0</span>
+                </div>
+
+                <div class="text-3xl font-bold text-slate-200 text-slate-600 bg-sky-300 p-2 px-20 rounded-full">TIC TAC TOE</div>
+
+                <div class="bg-green-200 text-slate-900 p-2 px-4 border-3 border-green-900 rounded-lg flex items-center" id="player_2">
+                    <span class="text-2xl font-bold me-3">Jogador 2:</span>
+                    <span class="text-3xl font-bold text-yellow-600" id="score_player2">0</span>
+                </div>
+
+            </div>
+
+            <hr class="border-slate-300 my-4">
+
+            <div class="bg-slate-700 p-10 rounded-lg shadow-md">
+                <div class="flex justify-center gap-1 mb-1">
+                    <div class="w-[100px] h-[100px] border-1 border-slate-400 cell" data-row="0" data-col="0"></div>
+                    <div class="w-[100px] h-[100px] border-1 border-slate-400 cell" data-row="0" data-col="1"></div>
+                    <div class="w-[100px] h-[100px] border-1 border-slate-400 cell" data-row="0" data-col="2"></div>
+                </div>
+                <div class="flex justify-center gap-1 mb-1">
+                    <div class="w-[100px] h-[100px] border-1 border-slate-400 cell" data-row="1" data-col="0"></div>
+                    <div class="w-[100px] h-[100px] border-1 border-slate-400 cell" data-row="1" data-col="1"></div>
+                    <div class="w-[100px] h-[100px] border-1 border-slate-400 cell" data-row="1" data-col="2"></div>
+                </div>
+                <div class="flex justify-center gap-1 mb-1">
+                    <div class="w-[100px] h-[100px] border-1 border-slate-400 cell" data-row="2" data-col="0"></div>
+                    <div class="w-[100px] h-[100px] border-1 border-slate-400 cell" data-row="2" data-col="1"></div>
+                    <div class="w-[100px] h-[100px] border-1 border-slate-400 cell" data-row="2" data-col="2"></div>
+                </div>
+            </div>
+
+            <hr class="border-slate-300 my-4">
+
+            <div class="text-center">
+                <p class="text-3xl text-slate-500 mb-6" id="winner"></p>
+                <button class="bg-slate-600 w-50 text-slate-100 text-2xl p-2 text-center border-1 border-slate-400 rounded-lg cursor-pointer shadow-md hover:bg-slate-500 hover:text-slate-100" id="next_game">Próximo jogo</button>
+            </div>
+
+        </div>
+
+      </div>
+
+      <script src="script.js"></script>
+
+</body>

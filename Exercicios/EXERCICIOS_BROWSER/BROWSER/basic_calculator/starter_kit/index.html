@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .font-mono {
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body class="bg-slate-100">
+    
+    <div class="flex items-center justify-center h-screen">
+        
+        <div class="p-6 bg-zinc-200 border-1 border-slate-400 rounded-lg shadow-md w-100">
+            
+            <div class="text-5xl font-mono font-bold text-right bg-cyan-900 text-slate-100 p-2 rounded-lg mb-4 overflow-hidden" id="display">0</div>
+
+            <div class="flex flex-row justify-between gap-4 mb-3">
+                <button class="flex-1 font-mono text-3xl font-bold p-2 rounded-lg shadow-md border-1 border-slate-400 cursor-pointer bg-zinc-300 hover:bg-zinc-200" id="btn_7">7</button>
+                <button class="flex-1 font-mono text-3xl font-bold p-2 rounded-lg shadow-md border-1 border-slate-400 cursor-pointer bg-zinc-300 hover:bg-zinc-200" id="btn_8">8</button>
+                <button class="flex-1 font-mono text-3xl font-bold p-2 rounded-lg shadow-md border-1 border-slate-400 cursor-pointer bg-zinc-300 hover:bg-zinc-200" id="btn_9">9</button>
+                <button class="flex-1 font-mono text-3xl font-bold p-2 rounded-lg shadow-md border-1 border-slate-400 cursor-pointer bg-zinc-400 hover:bg-zinc-300" id="btn_add">+</button>
+            </div>
+            <div class="flex flex-row justify-between gap-4 mb-3">
+                <button class="flex-1 font-mono text-3xl font-bold p-2 rounded-lg shadow-md border-1 border-slate-400 cursor-pointer bg-zinc-300 hover:bg-zinc-200" id="btn_4">4</button>
+                <button class="flex-1 font-mono text-3xl font-bold p-2 rounded-lg shadow-md border-1 border-slate-400 cursor-pointer bg-zinc-300 hover:bg-zinc-200" id="btn_5">5</button>
+                <button class="flex-1 font-mono text-3xl font-bold p-2 rounded-lg shadow-md border-1 border-slate-400 cursor-pointer bg-zinc-300 hover:bg-zinc-200" id="btn_6">6</button>
+                <button class="flex-1 font-mono text-3xl font-bold p-2 rounded-lg shadow-md border-1 border-slate-400 cursor-pointer bg-zinc-400 hover:bg-zinc-300" id="btn_sub">-</button>
+            </div>
+            <div class="flex flex-row justify-between gap-4 mb-3">
+                <button class="flex-1 font-mono text-3xl font-bold p-2 rounded-lg shadow-md border-1 border-slate-400 cursor-pointer bg-zinc-300 hover:bg-zinc-200" id="btn_1">1</button>
+                <button class="flex-1 font-mono text-3xl font-bold p-2 rounded-lg shadow-md border-1 border-slate-400 cursor-pointer bg-zinc-300 hover:bg-zinc-200" id="btn_2">2</button>
+                <button class="flex-1 font-mono text-3xl font-bold p-2 rounded-lg shadow-md border-1 border-slate-400 cursor-pointer bg-zinc-300 hover:bg-zinc-200" id="btn_3">3</button>
+                <button class="flex-1 font-mono text-3xl font-bold p-2 rounded-lg shadow-md border-1 border-slate-400 cursor-pointer bg-zinc-400 hover:bg-zinc-300" id="btn_multi">x</button>
+            </div>
+            <div class="flex flex-row justify-between gap-4 mb-3">
+                <button class="flex-1 font-mono text-3xl font-bold p-2 rounded-lg shadow-md border-1 border-slate-400 cursor-pointer bg-red-400 hover:bg-red-200" id="btn_reset">C</button>
+                <button class="flex-1 font-mono text-3xl font-bold p-2 rounded-lg shadow-md border-1 border-slate-400 cursor-pointer bg-zinc-300 hover:bg-zinc-200" id="btn_0">0</button>
+                <button class="flex-1 font-mono text-3xl font-bold p-2 rounded-lg shadow-md border-1 border-slate-400 cursor-pointer bg-green-400 hover:bg-green-200" id="btn_equal">=</button>
+                <button class="flex-1 font-mono text-3xl font-bold p-2 rounded-lg shadow-md border-1 border-slate-400 cursor-pointer bg-zinc-400 hover:bg-zinc-300" id="btn_div">:</button>
+            </div>
+
+        </div>
+
+      </div>
+
+      <script src="script.js"></script>
+
+</body>

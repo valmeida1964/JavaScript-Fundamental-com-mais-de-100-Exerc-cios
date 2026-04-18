@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-slate-100">
+
+    <div class="flex items-center justify-center m-10">
+
+        <div class="p-6 bg-slate-100 text-slate-500 border-1 border-slate-400 rounded-lg shadow-md w-200">
+
+            <p class="text-slate-500 text-2xl">Consumo de API com Basic Authentication</p>
+
+            <hr class="border-slate-400 my-4">
+            
+            <div class="flex items-center gap-4">
+                <div class="flex gap-4 w-full items-center">
+                    <label for="inputName" class="text-slate-500 me-4">Cliente:</label>
+                    <input type="text" id="inputName" class="border border-slate-400 rounded p-2 w-full">
+                </div>
+                <button id="btnAdd" class="bg-slate-500 text-white px-4 py-2 rounded hover:bg-slate-600">Adicionar</button>
+            </div>
+            
+            <hr class="border-slate-400 my-4">
+
+            <div id="records" class="mb-4"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>

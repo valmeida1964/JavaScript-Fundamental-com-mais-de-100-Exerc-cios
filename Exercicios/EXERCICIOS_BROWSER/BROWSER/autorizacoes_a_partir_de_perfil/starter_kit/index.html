@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-100">
+    
+    <div class="flex items-center justify-center h-screen">
+        
+        <div class="p-6 bg-slate-100 text-slate-500 border-1 border-slate-400 rounded-lg shadow-md w-1/2">
+
+            <p class="text-2xl text-slate-400">Autorizações de acordo com perfil</p>
+            
+            <hr class="border-slate-400 my-4">
+
+            <div class="flex flex-col gap-3">
+
+                <div class="flex items-center gap-2">
+                    <input type="checkbox" id="check_1" value="check_1" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2">
+                    <label for="check_1">Acesso à entrada e saída de mercadoria</label>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <input type="checkbox" id="check_2" value="check_2" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2">
+                    <label for="check_2">Registo de entrada de clientes</label>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <input type="checkbox" id="check_3" value="check_3" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2">
+                    <label for="check_3">Acesso a registo de entrada de colaboradores</label>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <input type="checkbox" id="check_4" value="check_4" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2">
+                    <label for="check_4">Controle de alarmes de incêndio</label>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <input type="checkbox" id="check_5" value="check_5" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2">
+                    <label for="check_5">Gestão de estoque</label>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <input type="checkbox" id="check_6" value="check_6" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2">
+                    <label for="check_6">Gestão administrativa</label>
+                </div>
+
+            </div>
+
+            <hr class="border-slate-400 my-4">
+
+            <div class="flex gap-5">
+                <span class="text-blue-500 hover:text-blue-800 hover:underline cursor-pointer" id="perfil_all">Todos</span>
+                <span class="text-blue-500 hover:text-blue-800 hover:underline cursor-pointer" id="perfil_none">Nenhum</span>
+                <span class="text-blue-500 hover:text-blue-800 hover:underline cursor-pointer" id="perfil_colaborator">Colaborador</span>
+                <span class="text-blue-500 hover:text-blue-800 hover:underline cursor-pointer" id="perfil_coordinator">Coordenador</span>
+                <span class="text-blue-500 hover:text-blue-800 hover:underline cursor-pointer" id="perfil_administrator">Administrador</span>
+            </div>
+
+        </div>
+
+      </div>
+
+</body>

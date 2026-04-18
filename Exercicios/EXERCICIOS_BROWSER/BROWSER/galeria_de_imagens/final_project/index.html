@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-slate-100">
+
+    <div class="flex items-center justify-center">
+
+        <div class="p-6 bg-slate-100 text-slate-500 border-1 border-slate-400 rounded-lg shadow-md w-full m-10 p-6">
+
+            <p class="text-2xl text-slate-500">Galeria de imagens</p>
+
+            <hr class="border-slate-400 my-4">
+
+            <div class="flex justify-center border-slate-400 mb-4">
+                <img src="images/1.jpg"
+                    class="w-[420px] h-[420px] p-[10px] border-1 border-slate-400 rounded-lg shadow-md"
+                    id="imagem_grande">
+            </div>
+            <div class="flex justify-center gap-4" id="colecao"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>

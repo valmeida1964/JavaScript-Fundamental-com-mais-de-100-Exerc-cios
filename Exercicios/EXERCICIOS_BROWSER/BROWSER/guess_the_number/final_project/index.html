@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-100">
+    
+    <div class="flex items-center justify-center h-screen">
+        
+        <div class="p-6 bg-slate-100 text-slate-500 border-1 border-slate-400 rounded-lg shadow-md w-1/2">
+            
+            <p class="text-2xl font-bold text-center mb-3">Adivinha o número</p>
+
+            <hr class="border-slate-300 my-4">
+            
+            <div class="text-center text-xl">
+                O número é entre <span class="font-bold text-sky-600">[mínimo]</span> e <span class="font-bold text-sky-600">[máximo]</span>
+            </div>
+            
+            <hr class="border-slate-300 my-6">
+
+            <div class="flex justify-center mb-6">
+                
+                <input type="text" id="text_number" class="text-4xl text-center font-bold bg-white text-slate-700 border-1 border-slate-400 rounded-md p-2 w-1/4 mb-3" placeholder="0" />
+
+            </div>
+
+            <div class="flex justify-center mb-6">
+                <button class="bg-slate-200 w-50 text-slate-700 text-2xl p-2 px-12 text-center border-1 border-slate-400 rounded-lg cursor-pointer shadow-md hover:bg-slate-600 hover:text-slate-100" id="btn_guess">Adivinhar</button>
+            </div>
+
+            <div class="text-xl text-center mb-6" id="id_hint"></div>
+            
+            <div class="flex justify-center mb-6">
+                <p class="text-2xl">Número de tentativas: <span class="font-bold" id="attempts">[tentativas]</span></p>
+            </div>
+            
+            <div class="flex justify-center mb-6">
+                <button class="bg-slate-100 w-30 text-slate-700 p-2 text-center border-1 border-slate-400 rounded-lg cursor-pointer shadow-md hover:bg-slate-600 hover:text-slate-100" id="btn_restart">Recomeçar</button>
+            </div>
+
+        </div>
+
+      </div>
+
+      <script src="script.js"></script>
+
+</body>

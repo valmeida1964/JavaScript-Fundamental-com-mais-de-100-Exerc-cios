@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-slate-100">
+
+    <div class="flex items-center justify-center mt-10">
+
+        <div class="p-6 bg-slate-100 text-slate-500 border-1 border-slate-400 rounded-lg shadow-md w-300">
+
+            <p class="text-2xl text-slate-400">Meninos e Meninas</p>
+
+            <hr class="border-slate-400 my-4">
+            
+            <div class="flex mb-4">
+                <div class="flex w-full items-center">
+                    <label for="inputName" class="block mb-2 text-sm font-medium text-slate-500 w-30">Digite o nome:</label>
+                    <input type="text" id="inputName" class="bg-slate-50 border border-slate-300 text-slate-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2">
+                </div>
+                <button class="ml-4 p-2 w-30 bg-blue-500 text-white rounded-lg hover:bg-blue-600" id="btnAdd">Enviar</button>
+            </div>
+
+            <div class="flex mb-4">
+                <input type="radio" id="radioBoy" name="radioSex" value="boy" checked>
+                <label for="radioBoy" class="ml-2 text-sm font-medium text-slate-500">Menino</label>
+                
+                <input type="radio" id="radioGirl" name="radioSex" value="girl" class="ml-4">
+                <label for="radioGirl" class="ml-2 text-sm font-medium text-slate-500" value="girl">Menina</label>
+            </div>
+
+            <hr class="border-slate-400 my-4">
+
+            <div class="flex gap-4 justify-between">
+                <div id="recordsBoys" class="w-1/2 border-1 border-slate-300 p-4 rounded-lg shadow-sm"></div>
+                <div id="recordsGirls" class="w-1/2 border-1 border-slate-300 p-4 rounded-lg shadow-sm"></div>
+            </div>
+
+            <div class="flex justify-end">
+                <button class="mt-4 p-2 w-30 bg-red-500 text-white rounded-lg hover:bg-red-600" id="btnClear">Limpar</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
